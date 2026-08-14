@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Цитрусы</title>
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/mobile-icon.png" />
+    <script src="./scripts/script.js" defer></script>
+  </head>
+  <body class="page">
+    <header class="header">
+      <button class="theme-button" aria-label="Переключить тему">
+        <!-- Светлая тема -->
+        <svg class="theme-icon theme-icon__light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" fill="none">
+          <path fill="#fff" d="M90 0c16.569 0 30 13.432 30 30 0 16.569-13.431 30-30 30H30C13.432 60 0 46.569 0 30 0 13.432 13.432 0 30 0zM30 6.585C17.069 6.585 6.585 17.069 6.585 30c0 12.932 10.484 23.415 23.415 23.415 12.932 0 23.415-10.483 23.415-23.415S42.932 6.585 30 6.585"/>
+          <path fill="#fff" d="M22.48 22.48c-4.154 4.153-4.154 10.887 0 15.04 4.152 4.154 10.886 4.154 15.04 0 4.153-4.153 4.153-10.887 0-15.04-4.154-4.153-10.888-4.153-15.04 0"/>
+          <path fill="#fff" fill-rule="evenodd" d="M17.195 17.195a1.646 1.646 0 0 1 2.328 0l1.164 1.164a1.646 1.646 0 1 1-2.328 2.328l-1.164-1.164a1.646 1.646 0 0 1 0-2.328M9.73 30c0-.91.737-1.646 1.646-1.646h3.492a1.646 1.646 0 1 1 0 3.292h-3.492c-.91 0-1.646-.737-1.646-1.646m20.27-20.271c.91 0 1.647.737 1.647 1.646v3.492a1.646 1.646 0 1 1-3.292 0v-3.492c0-.91.737-1.646 1.646-1.646M17.196 42.805a1.646 1.646 0 0 1 0-2.328l1.164-1.164a1.646 1.646 0 1 1 2.328 2.328l-1.164 1.164a1.646 1.646 0 0 1-2.328 0m22.117-22.117a1.646 1.646 0 0 1 0-2.329l1.164-1.164a1.646 1.646 0 1 1 2.328 2.328l-1.163 1.165a1.646 1.646 0 0 1-2.329 0M30 43.487c.91 0 1.646.737 1.646 1.646v3.492a1.646 1.646 0 1 1-3.292 0v-3.492c0-.91.737-1.646 1.646-1.647M43.486 30c0-.91.738-1.646 1.647-1.646h3.492a1.646 1.646 0 0 1 0 3.292h-3.492c-.91 0-1.647-.737-1.647-1.646m-4.174 9.313a1.646 1.646 0 0 1 2.329 0l1.163 1.163a1.646 1.646 0 1 1-2.328 2.329l-1.164-1.164a1.646 1.646 0 0 1 0-2.328" clip-rule="evenodd"/>
+        </svg>
+        <!-- Темная тема -->
+        <svg class="theme-icon theme-icon__dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 62" fill="none">
+          <rect class="icon-rect" width="117" height="56" x="2.5" y="2.5" stroke="#fff" stroke-width="5" rx="28"/>
+          <path fill="#fff" d="M98.92 10.508c-1.086-.455-2.008.846-1.527 1.938a17.15 17.15 0 0 1 1.446 6.92c0 9.34-7.418 16.91-16.57 16.91-3.203 0-6.193-.927-8.727-2.532-.998-.632-2.383.129-2.087 1.288 2.282 8.949 10.254 15.553 19.736 15.553 11.264 0 20.393-9.318 20.393-20.812 0-8.703-5.233-16.157-12.664-19.265"/>
+          <path fill="#fff" d="M71.643 22.441c-.789 1.183.62 2.594 1.805 1.805l2.109-1.406a5.2 5.2 0 0 1 5.775 0l2.109 1.406c1.183.789 2.593-.622 1.803-1.806l-1.405-2.108a5.205 5.205 0 0 1 0-5.775l1.405-2.109c.79-1.183-.62-2.593-1.804-1.803l-2.108 1.405a5.2 5.2 0 0 1-5.775 0l-2.11-1.406c-1.182-.789-2.593.621-1.803 1.806l1.405 2.108a5.21 5.21 0 0 1 0 5.774z"/>
+        </svg>
+      </button>
+      <h1 class="header__title">
+        Яркие, сочные и&nbsp;полезные
+      </h1>
+      <h2 class="header__subtitle">
+        Самые популярные и&nbsp;необычные цитрусовые планеты и&nbsp;их&nbsp;польза для&nbsp;здоровья
+      </h2>
+      <a class="header__button-link" href="#about">
+        <button type="button" class="header__button">
+          узнать больше
+        </button>
+      </a>
+      <div class="overlay"></div>
+    </header>
+    <section class="about" id="about">
+      <h2 class="about__title">
+        история цитрусов
+      </h2>
+      <svg class="line" width="1278" height="3" viewBox="0 0 1278 3" fill="#728300" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.80309e-07 0.937439C1.47526e-07 1.31244 1.14742e-07 1.68744 8.19589e-08 2.06244C21.3 2.12494 42.6 2.18432 63.9 2.24057C255.6 2.74684 447.3 2.99998 639 2.99999C830.7 3.00001 1022.4 2.7469 1214.1 2.24067C1235.4 2.18442 1256.7 2.12505 1278 2.06255C1278 1.68755 1278 1.31255 1278 0.937551C1256.7 0.875049 1235.4 0.815672 1214.1 0.75942C1022.4 0.253153 830.7 1.1587e-05 639 -5.172e-06C447.3 -2.19309e-05 255.6 0.253086 63.9 0.75932C42.6 0.815568 21.3 0.874941 1.80309e-07 0.937439Z" />
+      </svg>      
+      <p class="about__paragraph">
+        все цитрусы произошли от&nbsp;трех прародителей —&nbsp;цитрона, мандарина и&nbsp;помело. 
+        Некоторые из&nbsp;современных видов —&nbsp;результат скрещивания, остальные же&nbsp;были 
+        выведены человеком.
+      </p>
+    </section>
+    <section class="card-menu__container">
+      <nav class="card-menu">
+        <ul class="card-menu__list">
+          <a href="#pomelo" class="card-menu__link">
+            <li class="card-menu__list-item pomelo">
+              <span class="card-menu__title">помело</span>
+              <div class="overlay-gradient"></div>
+            </li>
+          </a>
+          <a href="#citron" class="card-menu__link">
+            <li class="card-menu__list-item citron">
+              <span class="card-menu__title">цитрон</span>
+              <div class="overlay-gradient"></div>
+            </li>
+          </a>
+          <a href="#tangarin" class="card-menu__link"><li class="card-menu__list-item tangarin">
+            <span class="card-menu__title">мандарин</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+          <a href="#orange" class="card-menu__link"><li class="card-menu__list-item orange">
+            <span class="card-menu__title">апельсин</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+          <a href="#limon" class="card-menu__link"><li class="card-menu__list-item limon">
+            <span class="card-menu__title">лимон</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+          <a href="#lime" class="card-menu__link"><li class="card-menu__list-item lime">
+            <span class="card-menu__title">лайм</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+          <a href="#grapefruit" class="card-menu__link"><li class="card-menu__list-item grapefruit">
+            <span class="card-menu__title">грейпфрут</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+          <a href="#kumquat" class="card-menu__link"><li class="card-menu__list-item kumquat">
+            <span class="card-menu__title">кумкват</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+          <a href="#oroblanco" class="card-menu__link"><li class="card-menu__list-item oroblanco">
+            <span class="card-menu__title">свити</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+          <a href="#bergamot-orange" class="card-menu__link"><li class="card-menu__list-item bergamot-orange">
+            <span class="card-menu__title">бергамот</span>
+            <div class="overlay-gradient"></div>
+          </li></a>
+        </ul>
+      </nav>
+    </section>
+    <nav class="menu">
+      <button class="hamburger" type="button" aria-label="Открыть меню">☰</button>
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a href="#pomelo" class="menu__link">помело</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#citron" class="menu__link">цитрон</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#tangarin" class="menu__link">мандарин</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#orange" class="menu__link">апельсин</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#limon" class="menu__link">лимон</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#lime" class="menu__link">лайм</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#grapefruit" class="menu__link">грейпфрут</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#kumquat" class="menu__link">кумкват</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#oroblanco" class="menu__link">свити</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#bergamot-orange" class="menu__link">бергамот</a>
+        </li>
+      </ul>
+      
+    </nav>
+    <main class="content">
+      <section class="card pomelo" id="pomelo">
+        <h2 class="card__title">помело</h2>
+        <p class="card__paragraph">
+          Самый крупный в&nbsp;мире цитрус, достигающий 20–25&nbsp;см в&nbsp;диаметре. Сто грамм 
+          помело обеспечат вам 68% от&nbsp;суточной нормы витамина С.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card citron" id="citron">
+        <h2 class="card__title">цитрон</h2>
+        <p class="card__paragraph">
+          Плоды варьируются по&nbsp;цвету от&nbsp;ярко-желтого до&nbsp;зеленого, обычно имеют 
+          яйцевидную форму. Мякоть может быть кислой или&nbsp;сладкой, а&nbsp;иногда ее&nbsp;нет 
+          вовсе. Цитроны также богаты витамином&nbsp;С и&nbsp;содержат много клетчатки.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card tangarin" id="tangarin">
+        <h2 class="card__title">мандарин</h2>
+        <p class="card__paragraph">
+          Родина мандаринов —&nbsp;Южный Китай и&nbsp;Индокитай. Сейчас мандарины широко 
+          выращиваются в&nbsp;Средиземноморье и&nbsp;Азии. В&nbsp;плодах мандарина большое 
+          количество сахара и&nbsp;витамины&nbsp;C, B1, B2.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card orange" id="orange">
+        <h2 class="card__title">апельсин</h2>
+        <p class="card__paragraph">
+          Наиболее популярный во&nbsp;всем мире гибрид, полученный от&nbsp;помело и&nbsp;мандарина. 
+          Самые большие урожаи собирают в&nbsp;Китае. Содержание витамина&nbsp;С в&nbsp;100&nbsp;г 
+          составляет 64% от дневной нормы.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card limon" id="limon">
+        <h2 class="card__title">лимон</h2>
+        <p class="card__paragraph">
+          Лимон -&nbsp;древний гибрид цитрона и&nbsp;горького апельсина. 100&nbsp;г лимона обеспечивают 
+          64% дневной нормы витамина C. Лимонный сок —&nbsp;натуральный консервант и&nbsp;
+          заменитель уксуса
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card lime" id="lime">
+        <h2 class="card__title">лайм</h2>
+        <p class="card__paragraph">
+          Частая альтернатива лимону. Считается, что&nbsp;лайм был выведен в&nbsp;XIX&nbsp;веке на&nbsp;полуострове 
+          Малакка. Разные виды лаймов представляют собой гибриды разных цитрусов, но&nbsp;обычно 
+          один из&nbsp;них —&nbsp;это цитрон. Калорийность лайма редко превышает 16&nbsp;ккал.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card grapefruit" id="grapefruit">
+        <h2 class="card__title">грейпфрут</h2>
+        <p class="card__paragraph">
+          Гибрид помело и&nbsp;апельсина, выведенный на&nbsp;Барбадосе в&nbsp;XVIII&nbsp;веке. Лидером 
+          по&nbsp;производству грейпфрутов является Китай. Эти цитрусы в&nbsp;большом количестве 
+          содержат фуранокумарины, которые мешают метаболизму лекарств.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card kumquat" id="kumquat">
+        <h2 class="card__title">кумкват</h2>
+        <p class="card__paragraph">
+          Самый маленький по размеру, но&nbsp;при этом самый питательный цитрус. Он, как&nbsp;правило, 
+          вырастает не&nbsp;больше 3–4 см&nbsp;в&nbsp;длину. Мякоть кумквата похожа на апельсиновую, но&nbsp;шкурка 
+          нежнее. Кумкваты были выведены в&nbsp;Китае не&nbsp;позже XII века.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card oroblanco" id="oroblanco">
+        <h2 class="card__title">свити</h2>
+        <p class="card__paragraph">
+          Был получен в&nbsp;результате скрещивания помело и&nbsp;грейпфрута в&nbsp;середине XX&nbsp;века. 
+          На&nbsp;вкус свити мягкий и&nbsp;кисло-сладкий. Даже у&nbsp;спелых плодов кожура остается зеленоватой, 
+          хотя постепенно может и&nbsp;пожелтеть.
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+      <section class="card bergamot-orange" id="bergamot-orange">
+        <h2 class="card__title">бергамот</h2>
+        <p class="card__paragraph">
+          Цитрус размером с&nbsp;апельсин, желтого или&nbsp;зеленого цвета в&nbsp;зависимости от&nbsp;спелости. 
+          Вероятный гибрид лимона и горького апельсина. Чаще всего используется в&nbsp;качестве 
+          ароматизатора для&nbsp;чая. Производят бергамоты в&nbsp;основном в&nbsp;Марокко и&nbsp;Италии
+        </p>
+        <div class="overlay-gradient"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__paragraph">2026 год</p>
+      <svg class="footer__image" viewBox="0 0 1920 320" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M0 168S448.5 0 960 0s960 169 960 169v151H0z"/>
+      </svg>
+    </footer>
+  </body>
+</html>

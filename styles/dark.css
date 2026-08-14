@@ -1,0 +1,36 @@
+[data-theme="dark"] {
+  --page-color: #2a2b20;
+  --accent-color: #4e5800;
+  --dark-accent-color: #434C00;
+  --light-color: #fff;
+  --dark-color: #3a3b32;
+  --overlay-color: #888b79;
+
+  --icon-fill: var(--light-color);
+  --icon-stroke: var(--light-color);
+}
+
+[data-theme="dark"] .about__title,
+[data-theme="dark"] .about__paragraph {
+  color: var(--light-color);
+}
+
+[data-theme="dark"] .line {
+  fill: var(--light-color);
+}
+
+[data-theme="dark"] .card-menu__list {
+  scrollbar-color: var(--light-color) transparent;
+}
+
+[data-theme="dark"] .theme-icon__light {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+}
+
+[data-theme="dark"] .theme-icon__dark {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}

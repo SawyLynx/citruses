@@ -1,0 +1,18 @@
+:root {
+  --page-color: #fbffdd;
+  --accent-color: #728300;
+  --dark-accent-color: #434C00;
+  --light-color: #fff;
+  --dark-color: #3a3b32;
+  --overlay-color: #969884;
+    
+  --page-font: Unbounded, sans-serif;
+  --title-font-size: clamp(34px, 4.7vw, 100px);
+  --paragraph-font-size: clamp(20px, 2.2vw, 60px);
+  --footer-font-size: clamp(16px, 1vw, 34px);
+
+  --shadow: 5px 6px 10px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 6px 7px 10px 3px rgba(0, 0, 0, 0.4);
+  --left-gradient: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, var(--overlay-color) 45%);
+  --right-gradient: linear-gradient(to right, rgba(118, 115, 115, 0) 0%, var(--overlay-color) 45%);
+}
