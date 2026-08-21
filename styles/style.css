@@ -410,7 +410,12 @@
 }
 
 @media (width <= 1700px) {
-  .hamburger {
+  	.theme-icon {
+    inline-size: 60%;
+    right: -85%;
+  	}
+	
+	.hamburger {
     box-sizing: border-box;
     inline-size: 100vw;
 		display: flex;
@@ -496,7 +501,7 @@
 
   .theme-icon {
     inline-size: 60%;
-    right: -105px;
+    right: -90%;
   }
 
   .about__paragraph {
