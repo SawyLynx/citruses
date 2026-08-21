@@ -480,6 +480,13 @@
 }
 
 @media (width <= 896px) {
+	.theme-icon {
+    inline-size: 60%;
+    right: -90%;
+  }
+}
+
+@media (width <= 768px) {
   .header {
     padding: 0;
     margin-bottom: 2.5rem;
