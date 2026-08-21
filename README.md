@@ -1,4 +1,5 @@
 ![Citruses Project Preview](images/readme-preview.png)
+
 # Цитрусы — Интерактивный одностраничный сайт
 
 ## Описание проекта:
