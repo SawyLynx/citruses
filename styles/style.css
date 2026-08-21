@@ -164,7 +164,7 @@
   list-style: none;
   scrollbar-color: var(--accent-color) transparent;
   align-items: center;
-  padding: 1% 1%;
+  padding: 1% 1% 2%;
 }
 
 .card-menu__link {
@@ -477,10 +477,6 @@
   .card {
     min-block-size: 60.8vw
   }
-
-  /*.card__paragraph {
-    font-size: clamp(20px, 1.82vw, 60px);
-  }*/
 }
 
 @media (width <= 768px) {
