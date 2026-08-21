@@ -7,7 +7,6 @@ const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
 document.documentElement.setAttribute('data-theme', currentTheme);
 
 document.addEventListener('DOMContentLoaded', () => {
-  // --- ЛОГИКА ПЕРЕКЛЮЧЕНИЯ ТЕМЫ ---
   const themeButton = document.querySelector('.theme-button');
 
   if (themeButton) {
@@ -20,25 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  // --- ЛОГИКА БУРГЕР-МЕНЮ ---
   const hamburger = document.querySelector('.hamburger');
   const menu = document.querySelector('.menu');
-  const menuLinks = document.querySelectorAll('.menu__link'); // Находим все ссылки внутри меню
+  const menuLinks = document.querySelectorAll('.menu__link');
 
-  // Функция для переключения состояния меню и изменения иконки
   function toggleMenu() {
     menu.classList.toggle('active');
     
     if (menu.classList.contains('active')) {
-      hamburger.textContent = '✕'; // Меняем на крестик
+      hamburger.textContent = '✕';
       hamburger.setAttribute('aria-label', 'Закрыть меню');
     } else {
-      hamburger.textContent = '☰'; // Возвращаем три полоски
+      hamburger.textContent = '☰';
       hamburger.setAttribute('aria-label', 'Открыть меню');
     }
   }
 
-  // Функция для принудительного закрытия меню
   function closeMenu() {
     menu.classList.remove('active');
     hamburger.textContent = '☰';
@@ -46,22 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (hamburger && menu) {
-    // Открытие/закрытие по клику на бургер
     hamburger.addEventListener('click', function(e) {
       e.stopPropagation();
       toggleMenu();
     });
 
-    // Закрытие меню при клике на любую ссылку внутри него
     menuLinks.forEach(link => {
       link.addEventListener('click', () => {
         closeMenu();
       });
     });
 
-    // Закрытие меню при клике в любое место экрана вне меню
     document.addEventListener('click', function(e) {
-      // Проверяем, что меню открыто и клик произошел не по меню и не по кнопке гамбургера
       if (menu.classList.contains('active') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
         closeMenu();
       }
